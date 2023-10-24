@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    width: 100%;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+.suggestion-part{
+    
+    margin: auto;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+}
+.heading{
+    font-size: 3rem;
+    margin-bottom: 2vh;
+}
