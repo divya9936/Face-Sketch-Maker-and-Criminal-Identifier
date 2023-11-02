@@ -1,7 +1,7 @@
 
 const selected =  document.getElementById("options");
 selected.addEventListener('click',changeSelected);
-
+let filter=data.js //********************************** */
 function changeSelected(){
     var listItems = document.querySelectorAll('ul li');
 
@@ -16,6 +16,11 @@ function changeSelected(){
       
       // Add the 'active' class to the clicked <li> element
       this.classList.add('active');
+      // change temp **********************************************************************
+      let wrapper=this.createElement("div");
+      wrapper.classList.add(".something");
+      //data.js par traverse karo aur this ki active class ko compare kara ke render karao
+      wrapper.addHTML=`<p>`
       
     }
     

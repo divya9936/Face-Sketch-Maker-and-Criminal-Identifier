@@ -16,6 +16,7 @@
 }
 .logo img{
     width: 9vw;
+    filter: contrast(100);
 }
 .login{
     width: 25%;
@@ -31,6 +32,6 @@
     position: absolute;
     top: -0;
     z-index: -1;
-    width: 30rem;
+    width: 3rem;
     right: 0;
 }
