@@ -65,13 +65,27 @@
     margin: auto;
     width: 90%;
     height: 80vh;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(255, 255, 255);
     margin-top: 20px;
     
 }
+.content-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contentImg{
+    width: 40%;
+    display: none;
+    padding-bottom: 10px;
+
+}
+
 .categories{
     width: 30%;
-    border-right: 3px solid black;
+    border-right: 3px solid rgb(255, 255, 255);
     /* padding-top: 5px; */
 }
 
@@ -93,7 +107,17 @@
     width: 60%;
 }
 .active{
-    background-color: #9BDCEB ;
+    background-color: #3ad1f3 !important; 
+}
+.active img{
+    background-color: #3ad1f3 !important; 
+}
+.active a{
+    background-color: #3ad1f3 !important;
+    color: black !important ;
+}
+.visible{
+    display: block !important;
 }
 
 @media only screen and (max-width: 600px) {
