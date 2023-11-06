@@ -2,7 +2,6 @@
 const selected =  document.getElementById("options");
 selected.addEventListener('click',changeSelected);
 let content=document.querySelector(".content");
-//let filter=data.js //********************************** */
 function changeSelected(){
     var listItems = document.querySelectorAll('ul li');
     var activeImg=document.querySelectorAll(".content .visible");
@@ -24,12 +23,11 @@ function changeSelected(){
       // Add the 'active' class to the clicked <li> element
       let className=this.id;
       this.classList.add('active');
-      // change temp **********************************************************************
+
       removeImage(className)
       removeContainer()
       renderImages(className)
-      //data.js par traverse karo aur this ki active class ko compare kara ke render karao
-      //wrapper.addHTML=`<p>`
+
       
     }
     
@@ -61,7 +59,8 @@ function renderImages(className){
     pdImg.classList.add("contentImg");
     pdImg.classList.add("visible");
     pdImg.setAttribute("id",`${className}`);
-    pdImg.src=`./elements/sketchElements/${className}/${i}.png`
+    // pdImg.classList.add(`${className}`);
+    pdImg.src=`./elements/sketchElements/${className}/${i+"-"}${i}.png`
     wrapper.appendChild(pdImg);
   }
   content.appendChild(wrapper);
@@ -78,7 +77,7 @@ let wrapper=document.createElement("div");
         pdImg.classList.add("contentImg");
         pdImg.classList.add("visible");
         pdImg.setAttribute("id","head");
-        pdImg.src=`./elements/sketchElements/head/${i}.png`
+        pdImg.src=`./elements/sketchElements/head/${i+"-"}${i}.png`
         wrapper.appendChild(pdImg);
       }
       content.appendChild(wrapper);
